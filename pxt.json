@@ -4,7 +4,7 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "joystick": "github:calliope-net/joystick#v2.0.2"
+        "joystick": "github:calliope-net/joystick#master"
     },
     "files": [
         "main.blocks",
