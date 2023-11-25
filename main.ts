@@ -1,5 +1,5 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
-    if (b2 > 0) {
+    if (b2 > 1) {
         b2 += -1
         basic.showNumber(b2)
     }
@@ -20,5 +20,5 @@ radio.setGroup(222)
 qwiicjoystick.beimStart(qwiicjoystick.qwiicjoystick_eADDR(qwiicjoystick.eADDR.Joystick_x20))
 b2 = 7
 loops.everyInterval(500, function () {
-    radio.sendNumber(qwiicjoystick.readJoystick(qwiicjoystick.qwiicjoystick_eADDR(qwiicjoystick.eADDR.Joystick_x20), (b2 + 1) * 10))
+    radio.sendNumber(qwiicjoystick.readJoystick(qwiicjoystick.qwiicjoystick_eADDR(qwiicjoystick.eADDR.Joystick_x20), b2))
 })
